@@ -10,8 +10,14 @@
 	<h1>My Rad Header</h1>
 
 	<?php
+
 		/*
 		* Instantiate a class
+		* 
+		* $person1 = new Person();
+		* $person1->set_name( 'Josh' );
+		* echo $person1->name;
+		* 
 		* Classes are the blueprints/templates of php objects. 
 		* Classes don’t actually become objects until you do 
 		* something called: instantiation.
@@ -23,13 +29,14 @@
 		* creating an instance of an object in memory. What 
 		* memory? The server’s memory of course! 
 		*/
-		$person1 = new Person();
-		$person1->set_name( 'Josh' );
-		echo $person1->name;
 
-		$person2 = new Person();
-		$person2->set_name( 'Sir Francis the 3rd' );
-		echo $person2->name;
+		$person1 = new Person( 'josh', 'brown', '45' );
+		echo $person1->get_name();
+		echo $person1->get_eye_color();
+		echo $person1->get_age();
+		$person1->set_name( 'bobby' );
+		echo $person1->get_name();
+
 
 	?>
 </body>
