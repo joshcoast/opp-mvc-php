@@ -37,6 +37,9 @@
 		$person1->set_name( 'bobby' );
 		echo $person1->get_name();
 
+		$person2 = new Person( 'Ned', 'Green', '99' );
+
+
 
 	?>
 </body>
