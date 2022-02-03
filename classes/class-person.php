@@ -1,4 +1,5 @@
 <?php
+
 class Person {
 	// Properties
 	private $name;
@@ -31,5 +32,4 @@ class Person {
 	public function __destruct() {
 		echo( '<p>this has been destructed ' . $this->name . ' ' . $this->eye_color . ' ' . $this->age . '</p>');
 	}
-
 }
